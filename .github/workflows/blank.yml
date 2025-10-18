@@ -2,7 +2,8 @@ name: Scheduled Workflow
 
 on:
   schedule:
-    - cron: "12 10 * * *"
+    - cron: "00 12 * * *"
+  workflow_dispatch:
 
 jobs:
   update-readme:
