@@ -1,5 +1,4 @@
 name: Scheduled Workflow
-
 on:
   schedule:
     - cron: "00 12 * * *"
@@ -19,11 +18,11 @@ jobs:
             with:
               python-version: "3.11"
     
-          - name: Generate new content
+          - name: Generate new content - 25ds1000058@ds.study.iitm.ac.in
             run: |
               echo "Updating README..."
               # Example: Add today's date/time
-              echo "Last updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ") by 25ds1000058@ds.study.iitm.ac.in" > update.txt
+              echo "Last updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")" > update.txt
     
               # Replace line in README or append to bottom
               if grep -q "Last updated:" README.md; then
